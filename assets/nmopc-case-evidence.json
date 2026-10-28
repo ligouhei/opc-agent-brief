@@ -1,0 +1,187 @@
+{
+  "source": "Existing nmOPC runs, October 2026; extracted 2026-10-27",
+  "process_scope": "uncalibrated research models; not wafer measurements or foundry signoff",
+  "cases": [
+    {
+      "task_id": "opc-0636",
+      "engine": "calibre-nmopc",
+      "label": "research_constraints_passed",
+      "full_task_acceptance": "not_claimed",
+      "relative_xor_improvement": 0.09417133807072753,
+      "metric_definition": "nominal core target-print polygon XOR area / core area",
+      "baseline": {
+        "parameters": {},
+        "metrics": {
+          "l2_error_fraction": 0.008584935617902651,
+          "l2_error_area_um2": 0.03599025,
+          "pvband_area_um2": 0.06297749999999999,
+          "mrc_violation_count": 0,
+          "sraf_printing_violation_count": 0,
+          "violations": {
+            "210": 0,
+            "211": 0,
+            "212": 0,
+            "213": 0,
+            "214": 0,
+            "240": 0
+          },
+          "hard_feasible": true
+        }
+      },
+      "candidate": {
+        "parameters": {
+          "fragment_min_um": 0.02,
+          "max_iter_movement_um": 0.007,
+          "sraf_minoffset_um": 0.05,
+          "sraf_maxoffset_um": 0.35
+        },
+        "metrics": {
+          "l2_error_fraction": 0.00777648074351371,
+          "l2_error_area_um2": 0.032601,
+          "pvband_area_um2": 0.06268275,
+          "mrc_violation_count": 0,
+          "sraf_printing_violation_count": 0,
+          "violations": {
+            "210": 0,
+            "211": 0,
+            "212": 0,
+            "213": 0,
+            "214": 0,
+            "240": 0
+          },
+          "hard_feasible": true
+        }
+      },
+      "crop": {
+        "layer": 46,
+        "datatype": 0,
+        "role": "poly",
+        "dbu_um": 0.0005,
+        "core_bbox_um": [
+          1.025,
+          1.025,
+          3.0725000000000002,
+          3.0725000000000002
+        ],
+        "context_bbox_um": [
+          0.0,
+          0.0,
+          4.0975,
+          4.0975
+        ],
+        "halo_um": 1.025,
+        "density": 0.21271958268295266,
+        "density_bin": "medium",
+        "source_boundary_overlap": true,
+        "context_polygons": 2,
+        "core_polygons": 3,
+        "scale_factor": 1.0,
+        "source_dbu_um": 0.0025,
+        "lossless_dbu_refinement_factor": 5
+      },
+      "source_files": {
+        "target.gds": {
+          "sha256": "efd03b16d10a36705566cd34fa828a8574cb1601cd4ed691f2a3075f9fd810f8"
+        },
+        "mask.gds": {
+          "sha256": "07a258267d619c3905f422f36dc3563a7f63d2510e3bae034cf37248cb4faf93"
+        },
+        "native-contours.gds": {
+          "sha256": "8741bd1a2481fd38a6a4f329bb7ef5a2242d71bdf3e0cbc4c538fc3cb5957e5c"
+        }
+      },
+      "image_sha256": "e266fbddba9abc54000ec3ddeadb0dd9469a255084c94de2e8994cd7d4a4b4d9"
+    },
+    {
+      "task_id": "opc-0207",
+      "engine": "calibre-nmopc",
+      "label": "research_constraints_failed",
+      "full_task_acceptance": "not_claimed",
+      "relative_xor_improvement": 0.07987602225624557,
+      "metric_definition": "nominal core target-print polygon XOR area / core area",
+      "baseline": {
+        "parameters": {
+          "fragment_min_um": 0.02,
+          "max_iter_movement_um": 0.003
+        },
+        "metrics": {
+          "l2_error_fraction": 0.02553844451904297,
+          "l2_error_area_um2": 0.026778999999999997,
+          "pvband_area_um2": 0.013366999999999999,
+          "mrc_violation_count": 2,
+          "sraf_printing_violation_count": 0,
+          "violations": {
+            "210": 0,
+            "211": 2,
+            "212": 0,
+            "213": 0,
+            "214": 0,
+            "240": 0
+          },
+          "hard_feasible": false
+        }
+      },
+      "candidate": {
+        "parameters": {
+          "fragment_min_um": 0.02,
+          "max_iter_movement_um": 0.007
+        },
+        "metrics": {
+          "l2_error_fraction": 0.02349853515625,
+          "l2_error_area_um2": 0.02464,
+          "pvband_area_um2": 0.013699,
+          "mrc_violation_count": 6,
+          "sraf_printing_violation_count": 0,
+          "violations": {
+            "210": 2,
+            "211": 4,
+            "212": 0,
+            "213": 0,
+            "214": 0,
+            "240": 0
+          },
+          "hard_feasible": false
+        }
+      },
+      "crop": {
+        "layer": 66,
+        "datatype": 20,
+        "role": "poly",
+        "dbu_um": 0.001,
+        "core_bbox_um": [
+          0.768,
+          0.768,
+          1.792,
+          1.792
+        ],
+        "context_bbox_um": [
+          0.0,
+          0.0,
+          2.56,
+          2.56
+        ],
+        "halo_um": 0.768,
+        "density": 0.45400142669677734,
+        "density_bin": "dense",
+        "source_boundary_overlap": false,
+        "context_polygons": 5,
+        "core_polygons": 3,
+        "scale_factor": 1.0,
+        "source_dbu_um": 0.001,
+        "lossless_dbu_refinement_factor": 1
+      },
+      "source_files": {
+        "target.gds": {
+          "sha256": "c9794fc3074b74434bf139574637e7f3f92e630b4293eb57320fd240719e75cc"
+        },
+        "mask.gds": {
+          "sha256": "d8c281e739e13c692d9cd905b34172c1fe4a80a564850027adebf4c43f84eb3c"
+        },
+        "native-contours.gds": {
+          "sha256": "99e1d9d1544157105fb5fcc923e631f18c7c6a1fe64ed95abb210fb94343f0df"
+        }
+      },
+      "image_sha256": "f24c82443fbc95d3961b29e19165891d0f7055ca8859c92b696ae4dd02a47e80"
+    }
+  ]
+}
